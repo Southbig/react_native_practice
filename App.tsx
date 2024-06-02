@@ -1,19 +1,25 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Main from './src/page/main';
 
-const stack = createNativeStackNavigator();
+import {screens} from './src/config/navigation/screens';
+
+import {RootStackParamList} from './src/config/navigation/types';
+
+const stack = createNativeStackNavigator<RootStackParamList>();
 
 const App = () => {
   return (
     <NavigationContainer>
       <stack.Navigator>
-        <stack.Screen
-          name={'Main'}
-          component={Main}
-          options={{headerShown: false}}
-        />
+        {screens.map(screen => (
+          <stack.Screen
+            key={screen.name}
+            name={screen.name}
+            component={screen.component}
+            options={screen.options}
+          />
+        ))}
       </stack.Navigator>
     </NavigationContainer>
   );
