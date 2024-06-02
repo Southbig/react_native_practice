@@ -1,14 +1,22 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Main from './src/page/main';
+
+const stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <NavigationContainer>
+      <stack.Navigator>
+        <stack.Screen
+          name={'Main'}
+          component={Main}
+          options={{headerShown: false}}
+        />
+      </stack.Navigator>
+    </NavigationContainer>
   );
 };
-
-// const styles = StyleSheet.create({});
 
 export default App;
