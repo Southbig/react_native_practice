@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1085647640708",
+    "project_id": "react-native-c19eb",
+    "storage_bucket": "react-native-c19eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085647640708:android:cf4628a7c3e19c75a6cad1",
+        "android_client_info": {
+          "package_name": "com.react_native_practice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7EnJXwcSdsC749psOMP7MyrT-6p22Qvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

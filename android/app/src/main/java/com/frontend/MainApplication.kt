@@ -1,4 +1,4 @@
-package com.frontend
+package com.react_native_practice
 
 import android.app.Application
 import com.facebook.react.PackageList
